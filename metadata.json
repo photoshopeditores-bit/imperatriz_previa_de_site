@@ -1,0 +1,6 @@
+{
+  "name": "Imperatriz Eventos",
+  "description": "Descubra o Imperatriz Eventos, o salão de festas e eventos premium em Imperatriz-MA. Oferecemos um espaço luxuoso e serviço impecável para casamentos, corporativos e celebrações memoráveis. Aberto 24h. Agende sua visita!",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

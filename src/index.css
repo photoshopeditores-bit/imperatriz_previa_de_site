@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --gold-primary: #d4af37;
+    --gold-light: #ffd700;
+    --gold-dark: #aa7c11;
+    --bg-dark: #0a0a0a;
+    --bg-card: #121212;
+  }
+
+  body {
+    font-family: 'Montserrat', system-ui, -apple-system, sans-serif;
+    background-color: #0a0a0a;
+    color: #f4f4f5;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif-luxury {
+    font-family: 'Playfair Display', Georgia, serif;
+    letter-spacing: -0.01em;
+  }
+}
+
+/* Glassmorphism sutil e refinado para ambiente de luxo */
+.glass-luxury {
+  background: rgba(18, 18, 18, 0.72);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(212, 175, 55, 0.16);
+}
+
+.glass-luxury-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-luxury-hover:hover {
+  background: rgba(26, 26, 26, 0.85);
+  border-color: rgba(255, 215, 0, 0.35);
+  box-shadow: 0 10px 30px -10px rgba(212, 175, 55, 0.15);
+}
+
+/* Textos e detalhes dourados elegantes */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #FFF0C2 0%, #FFD700 45%, #D4AF37 75%, #AA7C11 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #FFD700 0%, #D4AF37 50%, #B8860B 100%);
+}
+
+.bg-gold-gradient-hover:hover {
+  background: linear-gradient(135deg, #FFE552 0%, #E6BF3A 50%, #C89615 100%);
+}
+
+/* Borda dourada sutil */
+.border-gold-subtle {
+  border-color: rgba(212, 175, 55, 0.2);
+}
+
+/* Background Pattern sutil sem comprometer performance */
+.bg-subtle-pattern {
+  background-image: radial-gradient(rgba(212, 175, 55, 0.08) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2a2a;
+  border-radius: 4px;
+  border: 2px solid #0a0a0a;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}
+

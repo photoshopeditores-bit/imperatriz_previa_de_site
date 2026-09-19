@@ -1,0 +1,212 @@
+import { ServiceItem, GalleryImage, TestimonialItem } from '../types';
+
+export const COMPANY_INFO = {
+  name: 'Imperatriz Eventos',
+  tagline: 'Seu Palco para Momentos Inesquecíveis',
+  phoneRaw: '+5599991235865',
+  phoneDisplay: '(99) 99123-5865',
+  whatsappUrl: 'https://wa.me/5599991235865?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20e%20agendar%20uma%20visita%20ao%20Imperatriz%20Eventos.',
+  instagramUrl: 'https://www.instagram.com/imperatriz.eventos/?hl=pt',
+  address: 'Av. Newton Bello, 780 - Novo Horizonte, Imperatriz - MA, 65905-403',
+  hours: 'Aberto 24 horas',
+  rating: '4.5',
+  reviewCount: '190+',
+  googleMapsEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.6276856094047!2d-47.498327824141695!3d-5.493925054366632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92c5619dece133e9%3A0xe17b4000dc26145a!2sImperatriz%20Eventos!5e0!3m2!1spt-BR!2sbr!4v1710842000000!5m2!1spt-BR!2sbr',
+  googleMapsDirectionsUrl: 'https://maps.app.goo.gl/2CrpGnFeqcxKfgZ36',
+  googleMapsPhotosUrl: 'https://maps.app.goo.gl/2CrpGnFeqcxKfgZ36',
+};
+
+export const ABOUT_DATA = {
+  title: 'A Essência da Imperatriz Eventos',
+  mission: 'Transformar cada evento em uma experiência única e inesquecível, superando as expectativas com excelência em serviço e um ambiente de luxo incomparável.',
+  vision: 'Ser o salão de eventos de referência no Maranhão, reconhecido pela sofisticação, inovação e pela capacidade de realizar sonhos.',
+  values: ['Excelência', 'Inovação', 'Compromisso', 'Paixão', 'Hospitalidade'],
+  stats: [
+    { value: '4.5', label: 'Média de Avaliações', note: '+ de 190 clientes no Google' },
+    { value: '1.200+', label: 'Eventos Realizados', note: 'Casamentos e Corporativos' },
+    { value: '24h', label: 'Disponibilidade', note: 'Atendimento e Suporte' },
+    { value: '100%', label: 'Ambiente Climatizado', note: 'Acústica e Conforto Premium' },
+  ]
+};
+
+export const SERVICES_DATA: ServiceItem[] = [
+  {
+    id: 'casamentos',
+    title: 'Casamentos de Sonho',
+    shortDesc: 'Espaços deslumbrantes e assessoria completa para o dia mais especial da sua vida.',
+    fullDesc: 'Do altar cinematográfico à recepção suntuosa, nosso salão oferece o cenário perfeito com lustres refinados, passarela nobre, camarim da noiva exclusivo e flexibilidade para decorações clássicas ou contemporâneas.',
+    iconName: 'HeartHandshake',
+    features: ['Camarim VIP para Noiva e Noivo', 'Mobiliário Nobre e Lustres de Cristal', 'Acústica de Cinema para Cerimônia e Festa'],
+  },
+  {
+    id: 'corporativos',
+    title: 'Eventos Corporativos',
+    shortDesc: 'Infraestrutura moderna e suporte técnico para conferências, lançamentos e confraternizações de alto nível.',
+    fullDesc: 'Ambiente executivo climatizado com capacidade adaptável, internet fibra de altíssima velocidade, foyer para credenciamento e networking, e suporte técnico dedicado para convenções de impacto.',
+    iconName: 'Briefcase',
+    features: ['Conexão Dedicada de Alta Velocidade', 'Foyer Amplo para Coquetéis e Credenciamento', 'Disposição Flexível (Auditório, Mesas, Estandes)'],
+  },
+  {
+    id: 'sociais',
+    title: 'Celebrações Sociais',
+    shortDesc: 'Ambientes adaptáveis para aniversários, formaturas e festas temáticas com todo o requinte.',
+    fullDesc: 'Celebre 15 anos marcantes, bodas e formaturas inesquecíveis com pista de dança estruturada, iluminação cênica dinâmica e áreas de lounge acolhedoras que encantam todos os convidados.',
+    iconName: 'Sparkles',
+    features: ['Pista de Dança com Iluminação Cênica', 'Lounges Modulares e Espaço Bar', 'Segurança e Acessibilidade Completa'],
+  },
+  {
+    id: 'personalizacao',
+    title: 'Personalização Completa',
+    shortDesc: 'Pacotes flexíveis e customizáveis para atender a todas as suas necessidades e desejos.',
+    fullDesc: 'Cada celebração é única. Desenvolvemos plantas baixas personalizadas, cronogramas sob medida e configurações de layout pensadas especificamente para o formato da sua ocasião.',
+    iconName: 'Sliders',
+    features: ['Layouts Modulares Personalizados', 'Coordenação de Fornecedores e Montagem', 'Acompanhamento do Início ao Fim'],
+  },
+  {
+    id: 'gastronomia',
+    title: 'Parcerias Gastronômicas',
+    shortDesc: 'Opções de buffet e catering com chefs renomados para uma experiência culinária excepcional.',
+    fullDesc: 'Cozinha industrial e espaço gourmet de alta performance pronto para receber as melhores equipes de buffet, garantindo um serviço gastronômico requintado da entrada ao brinde final.',
+    iconName: 'UtensilsCrossed',
+    features: ['Cozinha Industrial Estruturada', 'Área Exclusiva de Apoio ao Buffet', 'Cardápios Degustação de Alta Gastronomia'],
+  },
+  {
+    id: 'audiovisual',
+    title: 'Suporte Audiovisual',
+    shortDesc: 'Tecnologia de ponta para iluminação, som e projeção que elevam o impacto do seu evento.',
+    fullDesc: 'Sistema acústico planejado, pontos de energia de alta voltagem para geradores, iluminação arquitetural em LED e suporte a telões de LED de alta definição para momentos emocionantes.',
+    iconName: 'Volume2',
+    features: ['Acústica Profissional sem Ecos', 'Gerador de Energia de Contingência', 'Infraestrutura para Projeção e Iluminação'],
+  },
+];
+
+// Fotos reais da Imperatriz Eventos extraídas do perfil oficial no Google Maps (https://maps.app.goo.gl/2CrpGnFeqcxKfgZ36)
+export const GALLERY_DATA: GalleryImage[] = [
+  {
+    id: 'gal-1',
+    url: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnliO85x-K5T2MmfP8IvtebjhtBmJ3UA5H1rVjT7ECom1o8lbWe3DmBR6RmBwo6ebVp89PU061u8iolzIU02WDKJrWvpVQOXYKp53Llt3IFrrCSwvXkhcASiKZLMXBprJbfOOdODA=w1200',
+    title: 'Salão Nobre com Mesas e Palco Decorado',
+    category: 'ambientes',
+    alt: 'Foto oficial do salão da Imperatriz Eventos no Google Maps com mesas ornamentadas e iluminação cênica',
+  },
+  {
+    id: 'gal-2',
+    url: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWl59zYi_J1TYu1MGQt2zbF9bkwJAmtiLpYKwcELecoooshs6N-DYdW41kV31de8bOEadDrwIwqx0l31fGzkp4VGn5kM3PSoIzLLC223arIOoVukNq6HvfXWxsWZzNnz9wE4i5IKGQ=w1200',
+    title: 'Cerimônia e Recepção de Casamento de Alto Padrão',
+    category: 'casamentos',
+    alt: 'Decoração e banquete de casamento realizado no salão da Imperatriz Eventos',
+  },
+  {
+    id: 'gal-3',
+    url: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWm3glXVGNc4bSQJWT4p4k-HtFkm9kKp3Wha16LO0KmaDeNaP2Rd92aFxjH-AFHG1KVfJciAeKItwlavlkIrr1jn6UXCI165kCWT-6Gh_qDBa7Dfq8u0-r9JTFi5OSOhvd6qVGQs=w1200',
+    title: 'Mesa de Doces Nobres e Arranjos Florais',
+    category: 'casamentos',
+    alt: 'Mesa de bolo e arranjos florais exuberantes no Imperatriz Eventos',
+  },
+  {
+    id: 'gal-4',
+    url: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkdeZawB2g6rrT9_Pa-ucH9tulS0HqihPwhff__9a70-L_SJM6_rmHx5gvyJkoJWf1NIqUIeo7K9dbTk6OrCEdmb-MzlkF-y_sLHlOLUn2QJp159NJ5AIBEmfCXn8x4FiWFSFMtnQ=w1200',
+    title: 'Festa Social com Pista e Luzes Cênicas',
+    category: 'sociais',
+    alt: 'Celebração social e iluminação personalizada na Imperatriz Eventos',
+  },
+  {
+    id: 'gal-5',
+    url: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkck-QII-JuVUgpdw3ladZFyeiPkSoWfKKww4dUpov1pweYlSuvU_oaeSbQx5D2ivJlyl9MEw7IOKxfDRR35vCRYq5HOS1DXQvjSJe9Qx7j_yZkpGNny7M_vNyEelMngPMUKBqLAQ=w1200',
+    title: 'Montagem de Banquete e Recepção Imperial',
+    category: 'casamentos',
+    alt: 'Banquete montado com toalhas nobres e louças requintadas no Imperatriz Eventos',
+  },
+  {
+    id: 'gal-6',
+    url: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWluv93aR3heu5s14pXLAwOXY1G66GV14JI0g_H-bVk3eE2swx92EaCzthckw91DhrTKTict17QNYQ16kTP1YCA_a4bj1pJUvnJLP4NocRjIcohF_UxqG-Ie3T2IpgXLMdOODAWnDQ=w1200',
+    title: 'Estrutura para Conferências e Eventos Corporativos',
+    category: 'corporativo',
+    alt: 'Disposição corporativa climatizada com palco e iluminação profissional',
+  },
+  {
+    id: 'gal-7',
+    url: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlURGGpu0XXoyeaRWf3YEKoiPt_F4Hsw35M5dysi1D0T3kcJI4A5ag8oBmv-aZ_ZfHcQOJVRopMR4L9-yCGeXTs_AmnSZw4F8FL-9yuhRH2ys_qC5Ak3a_wqm_E3gxlwsR0Gwjl=w1200',
+    title: 'Hall de Entrada e Foyer de Boas-Vindas',
+    category: 'ambientes',
+    alt: 'Área de recepção e foyer acolhedor na Imperatriz Eventos',
+  },
+  {
+    id: 'gal-8',
+    url: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWm87EqbgxSafdGbbHYOVFQzGDx6ouUMZ_h9aRVuIyN1Azwh-BndysWgLG5DPSyXHFQZNJQV8loO0vP-qz3swEDL6FHylpf-VM-WvuMhJVbQFinm-jzk50TN07DWKaX7XpImEkeR=w1200',
+    title: 'Lounge Climatizado e Mesas Confortáveis',
+    category: 'sociais',
+    alt: 'Ambiente aconchegante com mesas espaçosas e climatização total',
+  },
+  {
+    id: 'gal-9',
+    url: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWltub0P1Zx3iKoGZpkSqwOR_u27Kktd8eAlKGU-Wlb7IPesri_J2sJhUHJ7eMbvVbiBtJEm7vxZFIV7Xl9Vi9aw5a6IfgWNUhur8_yINO7aaZaIOrPxc4FPRe0J3mogJq3hWrMz=w1200',
+    title: 'Encontro Corporativo e Confraternização Empresarial',
+    category: 'corporativo',
+    alt: 'Reunião corporativa e confraternização de empresa no Imperatriz Eventos',
+  },
+  {
+    id: 'gal-10',
+    url: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmsVne5S5kS54--aTY6ZAm9OiIwtbvUbwHe5zrmiIKZFsmxNLabrMdvo9bzeE7OZlwpJ5LyFLEUoClyG2HMWqJfTyzufQZ9-91FCeaG7NLbIMk5uPtmbrcNR3iuwQQu0IxGOiwI=w1200',
+    title: 'Visão Noturna com Iluminação Cênica Especial',
+    category: 'ambientes',
+    alt: 'Cenografia e iluminação especial durante celebração noturna na Imperatriz Eventos',
+  },
+  {
+    id: 'gal-11',
+    url: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmjEPWXid2SLRl-Lu2a0lB7GUTTIxJEYPBHxiXomcOdCqEkcNAuJ8doHR1sJrDxWZtfwcjVR4GBsMgTl9_xcgINIIo369n6c2jzi5jKL4QsWsfFkVEckhJ7COA6MV4bMmBmqNKBYg=w1200',
+    title: 'Celebração de 15 Anos e Baile com Requinte',
+    category: 'sociais',
+    alt: 'Decoração de festa de 15 anos com espaço de dança e mesas no Imperatriz Eventos',
+  },
+  {
+    id: 'gal-12',
+    url: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnqmODnK5lMn2ZnqkU3jIPidiDYj0PDcXKVE6ktiqxHCRodcNVZwelIGiOQQUD2RtcMtWURPSldnTEE4VfSJ6klr47VGyCngkURe32tgxzAJ9jVrEQmR1oKzLLhdWyvSO9ak74G=w1200',
+    title: 'Espaço Amplo com Acústica e Conforto Térmico',
+    category: 'ambientes',
+    alt: 'Visão panorâmica de todo o salão da Imperatriz Eventos com acabamento impecável',
+  },
+];
+
+export const TESTIMONIALS_DATA: TestimonialItem[] = [
+  {
+    id: 'test-1',
+    author: 'Ana Clara S.',
+    role: 'Noiva',
+    rating: 5,
+    date: 'Avaliado há 2 semanas',
+    eventType: 'Casamento',
+    verified: true,
+    comment: 'O Imperatriz Eventos tornou o nosso casamento um verdadeiro conto de fadas! Cada detalhe foi perfeito, do atendimento atencioso da equipe à beleza do salão. Climatização excelente e acústica impecável. Luxo e profissionalismo em um só lugar. Recomendo demais!',
+  },
+  {
+    id: 'test-2',
+    author: 'Carlos M.',
+    role: 'CEO, Grupo Horizonte',
+    rating: 5,
+    date: 'Avaliado há 1 mês',
+    eventType: 'Convenção Corporativa',
+    verified: true,
+    comment: 'Realizei meu evento corporativo aqui e a experiência foi impecável. A infraestrutura é de ponta, internet rápida e a equipe superou todas as expectativas no suporte técnico e na recepção dos convidados. Ambiente sofisticado e ideal para reuniões e premiações de alto nível.',
+  },
+  {
+    id: 'test-3',
+    author: 'Juliana P.',
+    role: 'Aniversariante',
+    rating: 5,
+    date: 'Avaliado há 2 meses',
+    eventType: 'Festa de 30 Anos',
+    verified: true,
+    comment: 'Simplesmente maravilhoso! Minha festa de 30 anos foi inesquecível graças ao Imperatriz Eventos. O espaço é deslumbrante, teto alto, iluminação fantástica e o staff é incrivelmente atencioso e prestativo. Todos os meus convidados saíram impressionados. Nota 10!',
+  },
+  {
+    id: 'test-4',
+    author: 'Rodrigo & Marcella T.',
+    role: 'Bodas de Prata',
+    rating: 5,
+    date: 'Avaliado há 3 meses',
+    eventType: 'Bodas de Prata',
+    verified: true,
+    comment: 'Espaço espetacular em Imperatriz! Toda a assessoria nos deu segurança absoluta desde o primeiro contato até o encerramento da nossa festa. Espaço amplo, banheiros limpíssimos, camarim perfeito e localização excelente. Parabéns pelo alto padrão!',
+  },
+];
